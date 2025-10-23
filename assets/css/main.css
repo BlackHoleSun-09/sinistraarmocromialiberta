@@ -103,6 +103,14 @@ input, select, textarea {
 		font-size: 15pt;
 		font-weight: 100;
 		line-height: 1.75em;
+
+		/* Sfondo con colore e immagine
+		background-color: #1a1a1a; /* colore di base sotto l'immagine 
+		background-image: url('images/pantone2.jpg'); /* percorso della tua immagine
+        background-size: cover;       /* adatta l’immagine allo schermo 
+   		background-position: center;  /* centra l’immagine 
+  		background-repeat: no-repeat; /* evita ripetizioni 
+		background-attachment: fixed; /* sfondo fisso durante lo scroll */
 	}
 
 	a {
@@ -4109,3 +4117,52 @@ input, select, textarea {
 					}
 
 	}
+/* Sezione generale */
+section.wrapper {
+    position: relative;
+    padding: 4em 2em;
+}
+
+/* Sezione con colore di sfondo */
+section.bg-color {
+    background-color: #1a1a1a; /* colore a scelta */
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* Sezione con immagine di sfondo */
+section.bg-image {
+    background-image: url('images/pantone2.jpg'); /* immagine a scelta */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* Overlay semi-trasparente per le sezioni con immagine */
+section.bg-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(26, 26, 26, 0.5); /* overlay nero trasparente */
+    z-index: 0;
+}
+
+/* Contenuto della sezione sopra l'overlay */
+section.bg-image > .inner {
+    position: relative;
+    z-index: 1;
+}
+
+/* Adattamento responsive (mobile/tablet) */
+@media screen and (max-width: 768px) {
+    section.wrapper {
+        padding: 2em 1em;
+    }
+    section.bg-image::before {
+        background: rgba(26, 26, 26, 0.6); /* leggermente più scuro su mobile */
+    }
+}
