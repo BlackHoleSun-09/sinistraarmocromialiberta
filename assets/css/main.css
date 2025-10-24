@@ -4168,6 +4168,10 @@ section.bg-image > .inner {
 }
 
 /* Neon Circular Image Effect */
+/* =========================================================
+   Neon Circular Image Effect - Verde Elettrico (#39FF14)
+   ========================================================= */
+
 .neon-frame {
   position: relative;
   display: inline-flex;
