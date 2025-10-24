@@ -4168,10 +4168,6 @@ section.bg-image > .inner {
 }
 
 /* Neon Circular Image Effect */
-/* =========================================================
-   Neon Circular Image Effect - Verde Elettrico (#39FF14)
-   ========================================================= */
-
 .neon-frame {
   position: relative;
   display: inline-flex;
@@ -4179,7 +4175,7 @@ section.bg-image > .inner {
   align-items: center;
   border-radius: 50%;
   padding: 8px; /* spessore della cornice neon */
-  background: #39FF14; /* verde elettrico */
+  background: #39FF14; /* colore verde elettrico */
   box-shadow:
     0 0 10px #39FF14,
     0 0 30px #39FF14,
@@ -4190,11 +4186,11 @@ section.bg-image > .inner {
 
 .neon-frame img {
   display: block;
-  width: 150px;
+  width: 150px;  /* adatta la dimensione se serve */
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  background-color: #000; /* aiuta il contrasto */
+  background-color: #000; /* opzionale: risalto */
 }
 
 @keyframes neonPulseGreen {
