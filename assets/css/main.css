@@ -4168,44 +4168,48 @@ section.bg-image > .inner {
 }
 
 /* Neon Circular Image Effect */
-.neon-frame {
-  position: relative;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
+/* Cerchio di luce pulsante attorno a un'immagine */
+.neon-circle {
+  display: inline-block;
   border-radius: 50%;
-  padding: 8px; /* spessore della cornice neon */
-  background: #39FF14; /* colore verde elettrico */
+  background-color: transparent;
+  animation: pulseGlow 2s infinite;
   box-shadow:
     0 0 10px #39FF14,
+    0 0 20px #39FF14,
     0 0 30px #39FF14,
-    0 0 60px #39FF14,
-    0 0 100px #39FF14;
-  animation: neonPulseGreen 2s infinite;
+    0 0 40px #39FF14;
 }
 
-.neon-frame img {
+/* L'immagine dentro il cerchio */
+.neon-circle img {
   display: block;
-  width: 150px;  /* adatta la dimensione se serve */
-  height: 150px;
   border-radius: 50%;
-  object-fit: cover;
-  background-color: #000; /* opzionale: risalto */
+  width: 100%;
+  height: auto;
 }
 
-@keyframes neonPulseGreen {
-  0%, 100% {
+/* Animazione pulsante */
+@keyframes pulseGlow {
+  0% {
     box-shadow:
       0 0 10px #39FF14,
+      0 0 20px #39FF14,
       0 0 30px #39FF14,
-      0 0 60px #39FF14,
-      0 0 100px #39FF14;
+      0 0 40px #39FF14;
   }
   50% {
     box-shadow:
       0 0 20px #39FF14,
+      0 0 30px #39FF14,
       0 0 40px #39FF14,
-      0 0 80px #39FF14,
-      0 0 120px #39FF14;
+      0 0 50px #39FF14;
+  }
+  100% {
+    box-shadow:
+      0 0 10px #39FF14,
+      0 0 20px #39FF14,
+      0 0 30px #39FF14,
+      0 0 40px #39FF14;
   }
 }
