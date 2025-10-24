@@ -4166,3 +4166,47 @@ section.bg-image > .inner {
         background: rgba(26, 26, 26, 0.6); /* leggermente più scuro su mobile */
     }
 }
+
+/* Neon Circular Image Effect */
+.neon-frame {
+  position: relative;
+  width: 150px; /* dimensione del cerchio */
+  height: 150px;
+  border-radius: 50%;
+  padding: 5px; /* spazio per il bagliore */
+  background: #00ffff;
+  box-shadow:
+    0 0 10px #00ffff,
+    0 0 30px #00ffff,
+    0 0 60px #00ffff,
+    0 0 100px #00ffff;
+  animation: neonPulse 2s infinite;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.neon-frame img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover; /* adatta l'immagine */
+  border: 3px solid #000; /* opzionale: bordo nero interno */
+}
+
+@keyframes neonPulse {
+  0%, 100% {
+    box-shadow:
+      0 0 10px #00ffff,
+      0 0 30px #00ffff,
+      0 0 60px #00ffff,
+      0 0 100px #00ffff;
+  }
+  50% {
+    box-shadow:
+      0 0 20px #00ffff,
+      0 0 40px #00ffff,
+      0 0 80px #00ffff,
+      0 0 120px #00ffff;
+  }
+}
