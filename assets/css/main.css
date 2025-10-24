@@ -4209,32 +4209,3 @@ section.bg-image > .inner {
       0 0 120px #39FF14;
   }
 }
-
-/* Banner - Sfondo Gradiente Verde Elettrico */
-#banner {
-  background: linear-gradient(270deg, #39FF14, #003300, #39FF14);
-  background-size: 400% 400%;
-  animation: neonGradient 10s ease infinite;
-  color: #ffffff;
-  position: relative;
-  min-height: 300px;
-}
-
-#banner .content {
-  position: relative;
-  z-index: 2;
-}
-
-#banner::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.35); /* leggero velo scuro per migliorare il contrasto */
-  z-index: 1;
-}
-
-@keyframes neonGradient {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
