@@ -142,7 +142,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: #39FF14;
 		font-weight: 300;
 		line-height: 1em;
 		margin: 0 0 1em 0;
@@ -3459,8 +3459,8 @@ input, select, textarea {
 
 	#banner {
 		background-attachment: fixed;
-		background-color: #272833;
-		background-image: url("../../images/banner.jpg");
+		background-color: #dc14ff;
+		background-image: url("/images/banner.jpg");
 		background-position: center center;
 		background-size: cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
