@@ -4217,6 +4217,7 @@ section.bg-image > .inner {
   animation: neonGradient 10s ease infinite;
   color: #ffffff;
   position: relative;
+  min-height: 300px;
 }
 
 #banner .content {
